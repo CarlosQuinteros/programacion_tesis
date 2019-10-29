@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>BootsFaces Basic Page</title>
+    </h:head>
+    <h:body>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <h:form>
+                        <div>
+                            <label>Nombre Club</label>
+                        </div>
+                        <div>
+                            <p:inputText class="form-control" value="#{controllers.current.nombre}"></p:inputText>
+                        </div>
+                        <div>
+                            <p:commandButton value="Guardar" action="#{controllers.guardarClub()}"></p:commandButton>
+                        </div>
+
+                    </h:form>
+                </div>
+                <div class="col-md-6">
+                </div>
+            </div>
+        </div>
+    </h:body>
+</html>
+
