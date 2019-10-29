@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/E:/Documentos/NetBeansProjects/prueba2/web/index.xhtml</file>
+            <file>file:/E:/Documentos/NetBeansProjects/prueba2/src/java/modelo/Persona.java</file>
+            <file>file:/E:/Documentos/NetBeansProjects/prueba2/src/conf/persistence.xml</file>
+            <file>file:/E:/Documentos/NetBeansProjects/prueba2/web/WEB-INF/web.xml</file>
+            <file>file:/E:/Documentos/NetBeansProjects/prueba2/src/java/controladores/PersonaController.java</file>
+            <file>file:/E:/Documentos/NetBeansProjects/prueba2/src/java/persistencia/AbstractFacade.java</file>
+            <file>file:/E:/Documentos/NetBeansProjects/prueba2/src/java/persistencia/PersonaFacade.java</file>
+        </group>
+    </open-files>
+</project-private>

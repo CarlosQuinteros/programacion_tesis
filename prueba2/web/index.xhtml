@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>BootsFaces Basic Page</title>
+    </h:head>
+    <h:body>
+        <div class="container">
+            <h3>Gestion de Personas</h3>
+            <b:container>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="panel panel-primary col-md-6">
+                            <div class="panel panel-heading">Nueva Persona</div>
+                            <div class="panel panel-body">
+                                <div>
+
+                                    <b:form>
+                                        <b:inputText label="Nombre" class="form-control input-sm" placeholder="Nombre"></b:inputText>
+                                        <b:inputText label="Apellido" class="form-control" placeholder="Apellido"></b:inputText>
+                                        <b:inputText label="Documento" class="form-control" placeholder="Documento"></b:inputText>
+                                        <b:commandButton look="success" value="Guardar"></b:commandButton>
+
+                                    </b:form>  
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <b:dataTable class="table table-borderer" style="width:100%" value="#{personaController.listarPersonas()}" var="persona">
+                                <b:dataTableColumn value="#{persona.nombre}"></b:dataTableColumn>
+                                <b:dataTableColumn value="#{persona.apellido}"></b:dataTableColumn>
+                            </b:dataTable>
+                        </div>
+                    </div>
+                </div>
+            </b:container>
+        </div>
+    </h:body>
+</html>
