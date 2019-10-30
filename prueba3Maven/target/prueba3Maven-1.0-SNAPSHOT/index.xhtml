@@ -14,28 +14,25 @@
 
                 <div class="container">
                     <div class="row">
-                        <div class="panel panel-primary col-md-6">
-                            <div class="panel panel-heading">Nueva Persona</div>
-                            <div class="panel panel-body">
-                                <div>
+                        <div class="col-md-6">
+                            <b:panel title="Agregar Persona" look="primary">
+                                <b:form>
+                                    <b:inputText label="Nombre" class="form-control input-sm" placeholder="Nombre"></b:inputText>
+                                    <b:inputText label="Apellido" class="form-control" placeholder="Apellido"></b:inputText>
+                                    <b:inputText label="Documento" class="form-control" placeholder="Documento"></b:inputText>
+                                    <b:commandButton look="success" value="Guardar"></b:commandButton>
 
-                                    <b:form>
-                                        <b:inputText label="Nombre" class="form-control input-sm" placeholder="Nombre"></b:inputText>
-                                        <b:inputText label="Apellido" class="form-control" placeholder="Apellido"></b:inputText>
-                                        <b:inputText label="Documento" class="form-control" placeholder="Documento"></b:inputText>
-                                        <b:commandButton look="success" value="Guardar"></b:commandButton>
-
-                                    </b:form>  
-                                </div>
-
-                            </div>
-
+                                </b:form>
+                            </b:panel>
                         </div>
                         <div class="col-md-6">
-                            <b:dataTable class="table-bordered" style="width:100%" value="#{personaController.listarPersonas()}" var="persona">
-                                <b:dataTableColumn value="#{persona.nombre}"></b:dataTableColumn>
-                                <b:dataTableColumn value="#{persona.apellido}"></b:dataTableColumn>
-                            </b:dataTable>
+                            <b:panel title="Listado de Personas" look="primary">
+                                <b:dataTable class="table-bordered" style="width:100%" value="#{personaController.listarPersonas()}" var="persona">
+                                    <b:dataTableColumn value="#{persona.nombre}"></b:dataTableColumn>
+                                    <b:dataTableColumn value="#{persona.apellido}"></b:dataTableColumn>
+                                </b:dataTable>   
+                            </b:panel>
+
                         </div>
                     </div>
                 </div>
@@ -43,4 +40,3 @@
         </div>
     </h:body>
 </html>
-            
